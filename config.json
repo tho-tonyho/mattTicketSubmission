@@ -4,7 +4,7 @@
     "port": 2000,
     "cookieName": "MATT",
 
-    "ADUrl": "ldaps://hyengldap.warnermedia.com:636",
+    "ADUrl": "ldaps://",
     "ADBaseDN": "dc=wmad,dc=warnermedia,dc=com",
     "ADBindDN": "",
     "ADBindCredentials": "",
