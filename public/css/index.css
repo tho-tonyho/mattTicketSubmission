@@ -1,0 +1,55 @@
+body {
+  background-color: #0f1218;
+  margin: 50px;
+  color: white;
+	font-family: var(--font-family);
+}
+
+h1{
+  margin: 30px
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2B2B2B;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* Button */
+
+/* Links */
+#commonRequests {
+  width: 25%;
+}
+
+#howTo {
+  width: 50%;
+}
+
+#links {
+  width: 25%;
+}
+
+#spacer{
+  margin: 20px;
+}
+
+

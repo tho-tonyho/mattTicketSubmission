@@ -1,0 +1,47 @@
+body{
+    /* background: rgb(27,43,101); */
+    height: 100vh;
+    margin: 20px;
+}
+
+#loginSection {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    max-width: 320px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#loginSection h1 {
+    text-align: center;
+}
+
+#loginSection form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+#loginSection form input {
+    margin: auto;
+}
+
+#loginButton {
+    width: 100%;
+    padding: 12px;
+    background: #F3A83B;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/*# sourceMappingURL=login.css.map */

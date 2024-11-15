@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+ :root {
+	 --space-root: 1rem;
+	 --space-xs: calc(var(--space-root) / 2);
+	 --space-s: calc(var(--space-root) / 1.5);
+	 --space-m: var(--space-root);
+	 --space-l: calc(var(--space-root) * 1.5);
+	 --space-xl: calc(var(--space-root) * 2);
+	 --base-border-radius: 0.25rem;
+	 --ease: cubic-bezier(0.075, 0.82, 0.165, 1);
+	 --duration: 350ms;
+	 --font-family: 'Roboto', sans-serif;
+	 --font-size: 1.25rem;
+
+	 --color-primary: mediumslateblue;
+	 --font-color: #fff;
+	 --background-color: #191f27;
+	 --submit-button-font: #191f27;
+}
+ * {
+	 box-sizing: border-box;
+}
+
+/* Title */
+ h2 {
+	 font-weight: 700;
+	 font-size: calc(var(--font-size) * 1.5);
+	 color: var(--font-color);
+}
+.form {
+	font-size: var(--font-size);
+	font-family: var(--font-family);
+	position: relative;
+	width: 100%;
+	width: 380px;
+	max-width: 450px;
+	margin: 0 auto;
+	margin-top: 90px;
+	transition: box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+	background-color: var(--background-color);
+}
+.form-inner {
+	 padding: var(--space-xl);
+	 background-color: var(--background-color);
+	 z-index: 1;
+}
+ .form-inner > * + * {
+	 margin-top: var(--space-xl);
+}
+
+/* ------------------------------------------ */
+.input-wrapper:focus-within label {
+	color: var(--color-primary);
+}
+.input-wrapper:focus-within input {
+	border-color: var(--color-primary);
+}
+ .input-wrapper + .input-wrapper {
+	 margin-top: var(--space-l);
+}
+
+/* Short description */
+ label {
+	 font-size: calc(var(--font-size) / 1.65);
+	 font-weight: 700;
+	 text-transform: uppercase;
+	 letter-spacing: 0.065rem;
+	 display: block;
+	 margin-bottom: var(--space-xs);
+	 color: var(--font-color);
+	 /* transition: color 0.1s;
+	 transition-timing-function: ease-in-out; */
+}
+
+/* Input */
+textarea {
+	 width: 100%;
+	 outline: none;
+	 padding: var(--space-m);
+	 font-size: var(--font-size);
+	 font-family: var(--font-family);
+	 color: var(--font-color);
+	 border: 2px solid var(--font-color);
+	 border-radius: var(--base-border-radius);
+	 background-color: var(--background-color);
+
+}
+textarea:focus {
+	border: 2px solid var(--color-primary);
+}
+
+/* Submit Button */
+ .btn-group {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+
+ .btn {
+	 position: relative;
+	 overflow: hidden;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+	 outline: none;
+	 padding: var(--space-m) var(--space-l);
+	 cursor: pointer;
+	 border: 2px solid transparent;
+	 border-radius: var(--base-border-radius);
+}
+ .btn--primary {
+	 font-size: calc(var(--font-size) / 1.65);
+	 font-weight: 700;
+	 text-transform: uppercase;
+	 letter-spacing: 0.065rem;
+	 background-color: var(--font-color);
+	 border-color: var(--font-color);
+
+	 cursor: pointer;
+
+	 color: var(--submit-button-font);
+}
+ .btn--primary:focus {
+	background-color: var(--color-primary);
+	border-color: var(--color-primary);
+}

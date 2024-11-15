@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <link rel="stylesheet" type="text/css" href="/css/form/form.css" />
+        <link rel="stylesheet" type="text/css" href="/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="/css/table/table.css" />
+        <title>Matt's Dash</title>
+    </head>
+    <body onload="fetchSnowData();">
+      <section>
+        <div>
+          <form id="ticketSubmitForm" class="form">
+            <div class="form-inner">
+                <h2>Submit Ticket</h2>
+                <div class="input-wrapper">
+                    <label for="shortDescription">Short Description</label>
+                        <textarea 
+                        id="shortDescription" 
+                        name="shortDescription" 
+                        rows="4" 
+                        cols="50"
+                        ></textarea>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn--primary">Submit</button>
+                </div>
+            </div>
+        </form>
+        </div>
+        <div id="spacer"></div>
+        <div id="recentlySubmitted">
+          <h1>Recently Submitted/Unassigned</h1>
+          <div>
+            <table id="recentlySubmittedTable"></table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="knownIssues">
+          <h1>Known Issues</h1>
+          <div>
+            <table id="knownIssuesTable"></table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="commonRequests">
+          <h1>Common Requests</h1>
+        </div>
+        <div id="howTo">
+          <h1>How - To</h1>
+        </div>
+        <div id="links">
+          <h1>Links</h1>
+        </div>
+      </section>
+      <script type="text/javascript" src="/js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "env" : "DEV",
+    "proxy": "",
+    "port": 2000,
+    "cookieName": "MATT",
+
+    "ADUrl": "ldaps://hyengldap.warnermedia.com:636",
+    "ADBaseDN": "dc=wmad,dc=warnermedia,dc=com",
+    "ADBindDN": "",
+    "ADBindCredentials": "",
+
+    "snowUser": "_svc_PostTechNorth",
+    "PROD_snowBaseUrl": "https://warnermedia.service-now.com/api/tubs/proc_int/incident",
+    "PROD_snowPw": "pw",
+    "DEV_snowBaseUrl": "https://Warnermediatest.service-now.com/api/tubs/proc_int/incident",
+    "DEV_snowPw": "pw",
+
+    "sqlUser": "user",
+    "sqlPw": "pw",
+    "sqlDB": "SNOW",
+    "sqlServer": "",
+
+    "validGroups": ["avid_eng"]
+}

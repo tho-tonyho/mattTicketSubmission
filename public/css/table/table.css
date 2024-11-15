@@ -1,0 +1,65 @@
+table {
+  text-align: left;
+  border-collapse:separate; 
+  border-spacing: 0 1em;
+  background-color: #191f27;
+  color: white;
+  padding: 20px 50px;
+}
+
+th{
+    /* padding: 15px 20px; */
+    padding: 10px 10px;
+    /* color: rgb(213 213 213); */
+    color: white;
+}
+
+th:first-child {
+    padding: 10px 10px 10px 0px;
+}
+
+th:last-child {
+    padding: 10px 0px 10px 10px;
+}
+
+
+
+td {
+    padding: 10px 10px;
+    border-top: 1px solid #5b6b83;
+}
+
+td:first-child {
+    padding: 10px 10px 10px 0px;
+    /* padding: 10px 10px; */
+    /* border-top: 1px solid #5b6b83; */
+}
+
+td:last-child {
+    padding: 10px 0px 10px 10px;
+    /* padding: 10px 10px; */
+    /* border-top: 1px solid #5b6b83; */
+}
+
+
+
+
+#recentlySubmitted {
+/* width: 75%; */
+/* margin: 20px; */
+}
+
+/* Table container */
+#recentlySubmitted div {
+    overflow-y:auto;
+    height: 396px;
+}
+  
+/* Table */
+#knownIssuesTable{
+width: 100%;
+}
+
+#knownIssues {
+width: 100%;
+}
